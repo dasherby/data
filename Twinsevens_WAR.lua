@@ -448,4 +448,4 @@ function self_command(command)
         useDTsets = not useDTsets
         send_command('@input /echo DT Mode ' .. (useDTsets and 'ON. The extra durability fills you with determination.' or 'OFF. Warning: Squishy.'))
     end
-end
+end 
