@@ -34,7 +34,7 @@ function get_sets()
         left_ear="Brutal earring",
         right_ear="Boii earring +1",
         left_ring="Petrov Ring",
-        right_ring="Flamma Ring",
+        right_ring="Niqmaddu ring",
         back="Null Shawl",
     }
 
@@ -93,7 +93,7 @@ function get_sets()
         waist="Sailfi Belt +1",
         left_ear="Thrud Earring",
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        left_ring="Rajas Ring",
+        left_ring="Niqmaddu ring",
         right_ring="Sroda Ring",
         back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
     }
@@ -110,7 +110,7 @@ function get_sets()
         waist="Sailfi Belt +1",
         left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         right_ear="Boii earring +1",
-        left_ring="Rajas Ring",
+        left_ring="Niqmaddu ring",
         right_ring="Sroda Ring",
         back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
     
@@ -128,7 +128,7 @@ function get_sets()
         left_ear="Thrud Earring",
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         left_ring="Petrov Ring",
-        right_ring="Flamma Ring",
+        right_ring="Niqmaddu ring",
         back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
     }
     
@@ -144,7 +144,7 @@ function get_sets()
         left_ear="Thrud Earring",
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         left_ring="Petrov Ring",
-        right_ring="Flamma Ring",
+        right_ring="Niqmaddu ring",
         back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
     }
     
@@ -160,7 +160,7 @@ function get_sets()
         left_ear="Thrud Earring",
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         left_ring="Petrov Ring",
-        right_ring="Flamma Ring",
+        right_ring="Niqmaddu ring",
         back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
     }
     
@@ -176,7 +176,7 @@ function get_sets()
         left_ear="Thrud Earring",
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         left_ring="Petrov Ring",
-        right_ring="Flamma Ring",
+        right_ring="Niqmaddu ring",
         back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
     }
     
@@ -191,7 +191,7 @@ function get_sets()
         waist="Sailfi Belt +1",
         left_ear="Thrud Earring",
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        left_ring="Rajas Ring",
+        left_ring="Niqmaddu ring",
         right_ring="Sroda Ring",
         back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
     }
@@ -207,7 +207,7 @@ function get_sets()
         waist="Sailfi Belt +1",
         left_ear="Thrud Earring",
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        left_ring="Rajas Ring",
+        left_ring="Niqmaddu ring",
         right_ring="Sroda Ring",
         back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
     }
@@ -223,7 +223,7 @@ function get_sets()
         waist="Sailfi Belt +1",
         left_ear="Thrud Earring",
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        left_ring="Rajas Ring",
+        left_ring="Niqmaddu ring",
         right_ring="Sroda Ring",
         back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
     }
@@ -239,7 +239,7 @@ function get_sets()
         waist="Sailfi Belt +1",
         left_ear="Thrud Earring",
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        left_ring="Rajas Ring",
+        left_ring="Niqmaddu ring",
         right_ring="Sroda Ring",
         back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
     }
@@ -272,7 +272,7 @@ function get_sets()
         left_ear="Thrud Earring",
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         left_ring="Petrov Ring",
-        right_ring="Flamma Ring",
+        right_ring="Niqmaddu ring",
         back="Mecisto. Mantle",
     }
 
