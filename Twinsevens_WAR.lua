@@ -23,7 +23,7 @@ function get_sets()
 
     -- Melee Sets
     sets.melee.normal = {
-        ammo="Ginsen",
+        ammo="Coiste bodhar",
         head="Boii mask +2",
         body="Boii lorica +2",
         hands="Sakpata's gauntlets",
@@ -83,7 +83,7 @@ function get_sets()
 
     -- Weapon Skill Sets
     sets.ws.normal = {
-        ammo="Yetshila",
+        ammo="Coiste bodhar",
         head="Boii mask +2",
         body="Pummeler's Lorica +2",
         hands="Boii mufflers +2",
@@ -117,7 +117,7 @@ function get_sets()
     }
     
     sets.ws["Upheaval"] = {
-        ammo="Ginsen",
+        ammo="Coiste bodhar",
         head="Agoge mask +2",
         body="Pummeler's Lorica +2",
         hands="Boii mufflers +2",
@@ -133,7 +133,7 @@ function get_sets()
     }
     
     sets.ws["Armor Break"] = {
-        ammo="Ginsen",
+        ammo="Coiste bodhar",
         head="Sakpata's helm",
         body="Sakpata's plate",
         hands="Sakpata's gauntlets",
@@ -149,7 +149,7 @@ function get_sets()
     }
     
     sets.ws["Full Break"] = {
-        ammo="Ginsen",
+        ammo="Coiste bodhar",
         head="Sakpata's helm",
         body="Sakpata's plate",
         hands="Sakpata's gauntlets",
@@ -165,7 +165,7 @@ function get_sets()
     }
     
     sets.ws["Fell Cleave"] = {
-        ammo="Ginsen",
+        ammo="Coiste bodhar",
         head="Boii mask +2",
         body="Pummeler's Lorica +2",
         hands="Boii mufflers +2",
@@ -181,7 +181,7 @@ function get_sets()
     }
     
     sets.ws["Steel Cyclone"] = {
-        ammo="Ginsen",
+        ammo="Coiste bodhar",
         head="Boii mask +2",
         body="Pummeler's Lorica +2",
         hands="Boii mufflers +2",
@@ -197,7 +197,7 @@ function get_sets()
     }
     
     sets.ws["King's Justice"] = {
-        ammo="Ginsen",
+        ammo="Coiste bodhar",
         head="Boii mask +2",
         body="Pummeler's Lorica +2",
         hands="Boii mufflers +2",
@@ -213,7 +213,7 @@ function get_sets()
     }
     
     sets.ws["Raging Rush"] = {
-        ammo="Ginsen",
+        ammo="Coiste bodhar",
         head="Boii mask +2",
         body="Pummeler's Lorica +2",
         hands="Sakpata's gauntlets",
@@ -229,7 +229,7 @@ function get_sets()
     }
     
     sets.ws["Savage Blade"] = {
-        ammo="Ginsen",
+        ammo="Coiste bodhar",
         head="Agoge mask +2",
         body="Pummeler's Lorica +2",
         hands="Boii mufflers +2",
@@ -246,7 +246,7 @@ function get_sets()
 
 
     sets.ws["Sanguine Blade"] = {
-        ammo="Ginsen",
+        ammo="Coiste bodhar",
         head="Nyame helm",
         body="Nyame mail",
         hands="Nyame gauntlets",
@@ -261,7 +261,7 @@ function get_sets()
 
 
     sets.ws.cp = {
-        ammo="Yetshila",
+        ammo="Coiste bodhar",
         head="Boii mask +2",
         body="Pummeler's Lorica +2",
         hands="Boii mufflers +2",
