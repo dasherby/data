@@ -54,7 +54,7 @@ function get_sets()
         feet="Sakpata's leggings",
         left_ring="Sulevia's Ring",
         right_ring="Defending Ring",        
-        ammo="Angha Gem",
+        ammo="Staunch tathlum",
  
     })
 
@@ -296,7 +296,7 @@ function get_sets()
 
     -- Idle Sets
     sets.idle.normal = {
-        ammo="Angha Gem",
+        ammo="Staunch tathlum",
         head="Sakpata's helm",
         body="Sakpata's plate",
         hands="Sakpata's gauntlets",
