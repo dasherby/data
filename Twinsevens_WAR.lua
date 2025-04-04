@@ -33,7 +33,7 @@ function get_sets()
         waist="Sailfi Belt +1",
         left_ear="Brutal earring",
         right_ear="Boii earring +1",
-        left_ring="Petrov Ring",
+        left_ring="Moonbeam ring",
         right_ring="Niqmaddu ring",
         back="Null Shawl",
     }
@@ -52,7 +52,7 @@ function get_sets()
         hands="Sakpata's gauntlets",
         legs="Sakpata's cuisses",
         feet="Sakpata's leggings",
-        left_ring="Sulevia's Ring",
+        left_ring="Moonbeam ring",
         right_ring="Defending Ring",        
         ammo="Staunch tathlum",
  
