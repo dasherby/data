@@ -118,7 +118,7 @@ function get_sets()
     
     sets.ws["Upheaval"] = {
         ammo="Coiste bodhar",
-        head="Agoge mask +2",
+        head="Agoge mask +3",
         body="Pummeler's Lorica +2",
         hands="Boii mufflers +2",
         legs="Boii cuisses +2",
@@ -198,7 +198,7 @@ function get_sets()
     
     sets.ws["King's Justice"] = {
         ammo="Coiste bodhar",
-        head="Boii mask +2",
+        head="Agoge mask +3",
         body="Pummeler's Lorica +2",
         hands="Boii mufflers +2",
         legs="Boii cuisses +2",
@@ -230,7 +230,7 @@ function get_sets()
     
     sets.ws["Savage Blade"] = {
         ammo="Coiste bodhar",
-        head="Agoge mask +2",
+        head="Agoge mask +3",
         body="Pummeler's Lorica +2",
         hands="Boii mufflers +2",
         legs="Boii cuisses +2",
@@ -287,7 +287,7 @@ function get_sets()
         ['Berserk'] = { body="Pummeler's Lorica +2", feet="Agoge Calligae", back="Cichol's Mantle" },
         ['Aggressor'] = { body="Agoge Lorica +2", head="Pummeler's Mask +2" },
         ['Retaliation'] = { feet="Boii Calligae +2", hands="Pummeler's Mufflers +1" },
-        ['Warcry'] = { head="Agoge Mask +2" },
+        ['Warcry'] = { head="Agoge mask +3" },
         ['Tomahawk'] = { ammo="Throwing Tomahawk" },
         ['Blood Rage'] = { body="Boii Lorica +2" },
         ['Restraint'] = { hands="Boii Mufflers +1" },
