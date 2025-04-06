@@ -85,7 +85,7 @@ function get_sets()
     sets.ws.normal = {
         ammo="Coiste bodhar",
         head="Boii mask +2",
-        body="Pummeler's Lorica +2",
+        body="Pummeler's Lorica +3",
         hands="Boii mufflers +2",
         legs="Boii cuisses +2",
         feet="Pumm. Calligae +3",
@@ -119,7 +119,7 @@ function get_sets()
     sets.ws["Upheaval"] = {
         ammo="Coiste bodhar",
         head="Agoge mask +3",
-        body="Pummeler's Lorica +2",
+        body="Pummeler's Lorica +3",
         hands="Boii mufflers +2",
         legs="Boii cuisses +2",
         feet="Pumm. Calligae +3",
@@ -167,7 +167,7 @@ function get_sets()
     sets.ws["Fell Cleave"] = {
         ammo="Coiste bodhar",
         head="Boii mask +2",
-        body="Pummeler's Lorica +2",
+        body="Pummeler's Lorica +3",
         hands="Boii mufflers +2",
         legs="Boii cuisses +2",
         feet="Pumm. Calligae +3",
@@ -183,7 +183,7 @@ function get_sets()
     sets.ws["Steel Cyclone"] = {
         ammo="Coiste bodhar",
         head="Boii mask +2",
-        body="Pummeler's Lorica +2",
+        body="Pummeler's Lorica +3",
         hands="Boii mufflers +2",
         legs="Boii cuisses +2",
         feet="Pumm. Calligae +3",
@@ -199,7 +199,7 @@ function get_sets()
     sets.ws["King's Justice"] = {
         ammo="Coiste bodhar",
         head="Agoge mask +3",
-        body="Pummeler's Lorica +2",
+        body="Pummeler's Lorica +3",
         hands="Boii mufflers +2",
         legs="Boii cuisses +2",
         feet="Pumm. Calligae +3",
@@ -215,7 +215,7 @@ function get_sets()
     sets.ws["Raging Rush"] = {
         ammo="Coiste bodhar",
         head="Boii mask +2",
-        body="Pummeler's Lorica +2",
+        body="Pummeler's Lorica +3",
         hands="Sakpata's gauntlets",
         legs="Boii cuisses +2",
         feet="Pumm. Calligae +3",
@@ -231,7 +231,7 @@ function get_sets()
     sets.ws["Savage Blade"] = {
         ammo="Coiste bodhar",
         head="Agoge mask +3",
-        body="Pummeler's Lorica +2",
+        body="Pummeler's Lorica +3",
         hands="Boii mufflers +2",
         legs="Boii cuisses +2",
         feet="Pumm. Calligae +3",
@@ -263,7 +263,7 @@ function get_sets()
     sets.ws.cp = {
         ammo="Coiste bodhar",
         head="Boii mask +2",
-        body="Pummeler's Lorica +2",
+        body="Pummeler's Lorica +3",
         hands="Boii mufflers +2",
         legs="Boii cuisses +2",
         feet="Pumm. Calligae +3",
@@ -284,7 +284,7 @@ function get_sets()
 
     -- Job Abilities Sets
     sets.ja = {
-        ['Berserk'] = { body="Pummeler's Lorica +2", feet="Agoge Calligae", back="Cichol's Mantle" },
+        ['Berserk'] = { body="Pummeler's Lorica +3", feet="Agoge Calligae", back="Cichol's Mantle" },
         ['Aggressor'] = { body="Agoge Lorica +2", head="Pummeler's Mask +2" },
         ['Retaliation'] = { feet="Boii Calligae +2", hands="Pummeler's Mufflers +1" },
         ['Warcry'] = { head="Agoge mask +3" },
