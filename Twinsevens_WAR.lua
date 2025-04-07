@@ -186,7 +186,7 @@ function get_sets()
         body="Pummeler's Lorica +3",
         hands="Boii mufflers +2",
         legs="Boii cuisses +2",
-        feet="Pumm. Calligae +3",
+        feet="Sulev. leggings +2",
         neck="Warrior's beads",
         waist="Sailfi Belt +1",
         left_ear="Thrud Earring",
