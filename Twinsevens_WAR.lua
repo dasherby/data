@@ -52,7 +52,7 @@ function get_sets()
         hands="Sakpata's gauntlets",
         legs="Sakpata's cuisses",
         feet="Sakpata's leggings",
-        left_ring="Moonbeam ring",
+        left_ring="Gelatinous ring +1",
         right_ring="Defending Ring",        
         ammo="Staunch tathlum",
  
