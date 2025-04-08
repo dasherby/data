@@ -28,7 +28,7 @@ function get_sets()
         body="Boii lorica +2",
         hands="Sakpata's gauntlets",
         legs="Pumm. Cuisses +3",
-        feet="Pumm. Calligae +3",
+        feet="Sulev. leggings +2",
         neck={ name="Warrior's Beads", augments={'Path: A',}},
         waist="Sailfi Belt +1",
         left_ear="Schere earring",
@@ -84,18 +84,18 @@ function get_sets()
     -- Weapon Skill Sets
     sets.ws.normal = {
         ammo="Coiste bodhar",
-        head="Boii mask +2",
+        head="Agoge mask +3",
         body="Pummeler's Lorica +3",
         hands="Boii mufflers +2",
         legs="Boii cuisses +2",
-        feet="Pumm. Calligae +3",
+        feet="Sulev. leggings +2",
         neck="Warrior's beads",
         waist="Sailfi Belt +1",
         left_ear="Thrud Earring",
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         left_ring="Regal Ring",
         right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
     }
 
 
@@ -112,7 +112,7 @@ function get_sets()
         right_ear="Boii earring +1",
         left_ring="Regal Ring",
         right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
     
     }
     
@@ -145,7 +145,7 @@ function get_sets()
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         left_ring="Petrov Ring",
         right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
     }
     
     sets.ws["Full Break"] = {
@@ -161,7 +161,7 @@ function get_sets()
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         left_ring="Petrov Ring",
         right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
     }
     
     sets.ws["Fell Cleave"] = {
@@ -177,7 +177,7 @@ function get_sets()
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         left_ring="Petrov Ring",
         right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
     }
     
     sets.ws["Steel Cyclone"] = {
@@ -193,7 +193,7 @@ function get_sets()
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         left_ring="Sroda ring",
         right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
     }
     
     sets.ws["King's Justice"] = {
@@ -209,7 +209,7 @@ function get_sets()
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         left_ring="Regal Ring",
         right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
     }
     
     sets.ws["Raging Rush"] = {
@@ -225,7 +225,7 @@ function get_sets()
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         left_ring="Regal Ring",
         right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
     }
     
     sets.ws["Savage Blade"] = {
@@ -241,7 +241,7 @@ function get_sets()
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         left_ring="Regal Ring",
         right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
     }
 
 
