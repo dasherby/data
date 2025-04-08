@@ -1,0 +1,17 @@
+sets.exported={
+    main="Ukonvasara",
+    sub="Utu Grip",
+    ammo="Staunch Tathlum",
+    head="Sakpata's Helm",
+    body="Sacro Breastplate",
+    hands="Sakpata's Gauntlets",
+    legs="Sakpata's Cuisses",
+    feet="Sakpata's Leggings",
+    neck="Sanctity Necklace",
+    waist={ name="Sailfi Belt +1", augments={'Path: A',}},
+    left_ear="Schere Earring",
+    right_ear={ name="Boii Earring +1", augments={'System: 1 ID: 1676 Val: 0','Accuracy+11','Mag. Acc.+11','Crit.hit rate+3',}},
+    left_ring="Shneddick Ring",
+    right_ring="Warp Ring",
+    back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},
+}
