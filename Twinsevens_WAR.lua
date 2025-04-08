@@ -28,7 +28,7 @@ function get_sets()
         body="Boii lorica +2",
         hands="Sakpata's gauntlets",
         legs="Pumm. Cuisses +3",
-        feet="Sulev. leggings +2",
+        feet="Pummeler's calligae +3",
         neck={ name="Warrior's Beads", augments={'Path: A',}},
         waist="Sailfi Belt +1",
         left_ear="Schere earring",
