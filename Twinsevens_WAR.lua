@@ -46,7 +46,7 @@ function get_sets()
 
     sets.melee.dt = set_combine(sets.melee.normal, {
         neck="Loricate torque +1",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
+        back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},
         head="Boii mask +2",
         body="Boii lorica +2",
         hands="Sakpata's gauntlets",
@@ -129,7 +129,7 @@ function get_sets()
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
         left_ring="Regal Ring",
         right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
+        back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},
     }
     
     sets.ws["Armor Break"] = {
@@ -308,11 +308,11 @@ function get_sets()
         right_ear="Boii earring +1",
         left_ring="Shneddick Ring",
         right_ring="Warp Ring",
-        back="Null Shawl",
+        back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},
     }
 
     sets.idle.dt = set_combine(sets.idle.normal, {
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','"Dbl.Atk."+10','Damage taken-5%',}},
+        back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},
     })
 
     sets.idle.cp = set_combine(sets.idle.normal, {
