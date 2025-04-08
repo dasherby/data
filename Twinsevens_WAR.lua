@@ -291,7 +291,7 @@ function get_sets()
         ['Tomahawk'] = { ammo="Throwing Tomahawk" },
         ['Blood Rage'] = { body="Boii Lorica +2" },
         ['Restraint'] = { hands="Boii Mufflers +1" },
-        ['Provoke'] = { body={ name="Souv. Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}}, hands="Pummeler's Mufflers +1", head="Pummeler's Mask +2", left_ring="Apeile ring", right_ring="Apeile ring +1" }
+        ['Provoke'] = { body={ name="Souv. Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}}, hands="Pummeler's Mufflers +2", head="Pummeler's Mask +2", left_ring="Apeile ring", right_ring="Apeile ring +1" }
     }
 
     -- Idle Sets
