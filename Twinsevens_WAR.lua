@@ -100,7 +100,7 @@ function get_sets()
 
 
     sets.ws["Ukko's Fury"] = {
-        ammo="Yetshila",
+        ammo="Yetshila +1",
         head="Boii mask +2",
         body="Hjarrandi Breast.",
         hands="Flamma manopolas +2",
