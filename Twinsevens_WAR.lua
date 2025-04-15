@@ -83,7 +83,7 @@ function get_sets()
 
     -- Weapon Skill Sets
     sets.ws.normal = {
-        ammo="Coiste bodhar",
+        ammo="Knobkierrie",
         head="Agoge mask +3",
         body="Pummeler's Lorica +3",
         hands="Boii mufflers +2",
@@ -117,7 +117,7 @@ function get_sets()
     }
     
     sets.ws["Upheaval"] = {
-        ammo="Coiste bodhar",
+        ammo="Knobkierrie",
         head="Agoge mask +3",
         body="Pummeler's Lorica +3",
         hands="Boii mufflers +2",
@@ -133,7 +133,7 @@ function get_sets()
     }
     
     sets.ws["Armor Break"] = {
-        ammo="Coiste bodhar",
+        ammo="Knobkierrie",
         head="Sakpata's helm",
         body="Sakpata's plate",
         hands="Sakpata's gauntlets",
@@ -149,7 +149,7 @@ function get_sets()
     }
     
     sets.ws["Full Break"] = {
-        ammo="Coiste bodhar",
+        ammo="Knobkierrie",
         head="Sakpata's helm",
         body="Sakpata's plate",
         hands="Sakpata's gauntlets",
@@ -165,7 +165,7 @@ function get_sets()
     }
     
     sets.ws["Fell Cleave"] = {
-        ammo="Coiste bodhar",
+        ammo="Knobkierrie",
         head="Boii mask +2",
         body="Pummeler's Lorica +3",
         hands="Boii mufflers +2",
@@ -181,7 +181,7 @@ function get_sets()
     }
     
     sets.ws["Steel Cyclone"] = {
-        ammo="Coiste bodhar",
+        ammo="Knobkierrie",
         head="Boii mask +2",
         body="Pummeler's Lorica +3",
         hands="Boii mufflers +2",
@@ -197,7 +197,7 @@ function get_sets()
     }
     
     sets.ws["King's Justice"] = {
-        ammo="Coiste bodhar",
+        ammo="Knobkierrie",
         head="Agoge mask +3",
         body="Pummeler's Lorica +3",
         hands="Boii mufflers +2",
@@ -213,7 +213,7 @@ function get_sets()
     }
     
     sets.ws["Raging Rush"] = {
-        ammo="Coiste bodhar",
+        ammo="Knobkierrie",
         head="Boii mask +2",
         body="Pummeler's Lorica +3",
         hands="Sakpata's gauntlets",
@@ -229,7 +229,7 @@ function get_sets()
     }
     
     sets.ws["Savage Blade"] = {
-        ammo="Coiste bodhar",
+        ammo="Knobkierrie",
         head="Agoge mask +3",
         body="Pummeler's Lorica +3",
         hands="Boii mufflers +2",
@@ -246,7 +246,7 @@ function get_sets()
 
 
     sets.ws["Sanguine Blade"] = {
-        ammo="Coiste bodhar",
+        ammo="Knobkierrie",
         head="Nyame helm",
         body="Nyame mail",
         hands="Nyame gauntlets",
@@ -261,7 +261,7 @@ function get_sets()
 
 
     sets.ws.cp = {
-        ammo="Coiste bodhar",
+        ammo="Knobkierrie",
         head="Boii mask +2",
         body="Pummeler's Lorica +3",
         hands="Boii mufflers +2",
