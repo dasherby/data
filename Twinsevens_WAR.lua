@@ -258,6 +258,21 @@ function get_sets()
         right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
     }
 
+    sets.ws["Impulse Drive"] = {
+        ammo="Yetshila +1",
+        head="Boii mask +2",
+        body="Hjarrandi Breast.",
+        hands="Boii mufflers +2",
+        legs="Boii cuisses +2",
+        feet="Boii calligae +2",
+        neck="Warrior's beads",
+        waist="Sailfi Belt +1",
+        left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
+        right_ear="Boii earring +1",
+        left_ring="Regal ring",
+        right_ring="Niqmaddu ring",
+        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
+    }
 
 
     sets.ws.cp = {
