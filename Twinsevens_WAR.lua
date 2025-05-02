@@ -1,433 +1,273 @@
+
 send_command('wait 6; input /lockstyleset 001')
 send_command('wait 1; input //config frameratedivisor 1')
 send_command('wait 8; input /echo Your Ukonvasara, forged by the memories of those you held most dear, fills you with determination.')
 
--- Additional local binds
-send_command('bind F9` input /ja "Retaliation" <me>')
-send_command('bind F10` input /ja "Hasso" <me>')
-send_command('bind F11` input /ja "Seigan" <me>')
-send_command('bind F12` input /ja "Third Eye" <me>')
 
+
+-- Initialization function for this job file.
 function get_sets()
-    useDTsets = false
-    CPmode = false
-    THmode = false
-
-    sets.idle = {}                  -- Leave this empty.
-    sets.precast = {}               -- leave this empty
-    sets.midcast = {}               -- leave this empty
-    sets.aftercast = {}             -- leave this empty
-    sets.melee = {}                 -- leave this empty
-    sets.ws = {}                    -- leave this empty
-    sets.ja = {}                    -- leave this empty
-
-    -- Melee Sets
-    sets.melee.normal = {
-        ammo="Coiste bodhar",
-        head="Boii mask +2",
-        body="Boii lorica +2",
-        hands="Sakpata's gauntlets",
-        legs="Pumm. Cuisses +3",
-        feet="Pummeler's calligae +3",
-        neck={ name="Warrior's Beads", augments={'Path: A',}},
-        waist="Sailfi Belt +1",
-        left_ear="Schere earring",
-        right_ear="Boii earring +1",
-        left_ring="Moonbeam ring",
-        right_ring="Niqmaddu ring",
-        back="Null Shawl",
-    }
-
-
-    sets.melee.single = set_combine(sets.melee.normal, {
-        body="Hjarrandi Breast.",
- 
-    })
-
-    sets.melee.dt = set_combine(sets.melee.normal, {
-        neck="Loricate torque +1",
-        back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},
-        head="Boii mask +2",
-        body="Boii lorica +2",
-        hands="Sakpata's gauntlets",
-        legs="Sakpata's cuisses",
-        feet="Sakpata's leggings",
-        left_ring="Gelatinous ring +1",
-        right_ring="Defending Ring",        
-        ammo="Staunch tathlum",
- 
-    })
-
-    sets.melee.cp = set_combine(sets.melee.normal, {
-        back="Mecisto. Mantle",
-    })
-
-    sets.melee.th = set_combine(sets.melee.normal, {
-        ammo="Perfect Lucky Egg",
-        body={ name="Valorous Mail", augments={'INT+7','STR+15','"Treasure Hunter"+1',}},
-    })
-
-
-
-
-        -- Aftermath Level 3 Set
-    sets.melee.am3 = set_combine(sets.melee.normal, {
-        head="Boii mask +2",
-        body="Boii lorica +2",
-        hands="Boii mufflers +2",
-        legs="Boii cuisses +2",
-        feet="Boii Calligae +2",
-        right_ear="Boii Earring +1",
-    })
-
-
-    -- Weapon Skill Sets
-    sets.ws.normal = {
-        ammo="Knobkierrie",
-        head="Agoge mask +3",
-        body="Pummeler's Lorica +3",
-        hands="Boii mufflers +2",
-        legs="Boii cuisses +2",
-        feet="Sulev. leggings +2",
-        neck="Warrior's beads",
-        waist="Sailfi Belt +1",
-        left_ear="Thrud Earring",
-        right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        left_ring="Regal Ring",
-        right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
-    }
-
-
-    sets.ws["Ukko's Fury"] = {
-        ammo="Yetshila +1",
-        head="Boii mask +2",
-        body="Hjarrandi Breast.",
-        hands="Flamma manopolas +2",
-        legs="Boii cuisses +2",
-        feet="Boii calligae +2",
-        neck="Warrior's beads",
-        waist="Sailfi Belt +1",
-        left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        right_ear="Boii earring +1",
-        left_ring="Regal Ring",
-        right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
-    
-    }
-    
-    sets.ws["Upheaval"] = {
-        ammo="Knobkierrie",
-        head="Agoge mask +3",
-        body="Pummeler's Lorica +3",
-        hands="Boii mufflers +2",
-        legs="Boii cuisses +2",
-        feet="Sulev. leggings +2",
-        neck="Warrior's beads",
-        waist="Sailfi Belt +1",
-        left_ear="Thrud Earring",
-        right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        left_ring="Regal Ring",
-        right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},
-    }
-    
-    sets.ws["Armor Break"] = {
-        ammo="Knobkierrie",
-        head="Sakpata's helm",
-        body="Sakpata's plate",
-        hands="Sakpata's gauntlets",
-        legs="Boii cuisses +2",
-        feet="Pumm. Calligae +3",
-        neck="Warrior's beads",
-        waist="Sailfi Belt +1",
-        left_ear="Thrud Earring",
-        right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        left_ring="Petrov Ring",
-        right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
-    }
-    
-    sets.ws["Full Break"] = {
-        ammo="Knobkierrie",
-        head="Sakpata's helm",
-        body="Sakpata's plate",
-        hands="Sakpata's gauntlets",
-        legs="Boii cuisses +2",
-        feet="Pumm. Calligae +3",
-        neck="Warrior's beads",
-        waist="Sailfi Belt +1",
-        left_ear="Thrud Earring",
-        right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        left_ring="Petrov Ring",
-        right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
-    }
-    
-    sets.ws["Fell Cleave"] = {
-        ammo="Knobkierrie",
-        head="Boii mask +2",
-        body="Pummeler's Lorica +3",
-        hands="Boii mufflers +2",
-        legs="Boii cuisses +2",
-        feet="Pumm. Calligae +3",
-        neck="Warrior's beads",
-        waist="Sailfi Belt +1",
-        left_ear="Thrud Earring",
-        right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        left_ring="Petrov Ring",
-        right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
-    }
-    
-    sets.ws["Steel Cyclone"] = {
-        ammo="Knobkierrie",
-        head="Boii mask +2",
-        body="Pummeler's Lorica +3",
-        hands="Boii mufflers +2",
-        legs="Boii cuisses +2",
-        feet="Sulev. leggings +2",
-        neck="Warrior's beads",
-        waist="Sailfi Belt +1",
-        left_ear="Thrud Earring",
-        right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        left_ring="Sroda ring",
-        right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
-    }
-    
-    sets.ws["King's Justice"] = {
-        ammo="Knobkierrie",
-        head="Agoge mask +3",
-        body="Pummeler's Lorica +3",
-        hands="Boii mufflers +2",
-        legs="Boii cuisses +2",
-        feet="Sulev. leggings +2",
-        neck="Warrior's beads",
-        waist="Sailfi Belt +1",
-        left_ear="Thrud Earring",
-        right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        left_ring="Regal Ring",
-        right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
-    }
-    
-    sets.ws["Raging Rush"] = {
-        ammo="Knobkierrie",
-        head="Boii mask +2",
-        body="Pummeler's Lorica +3",
-        hands="Sakpata's gauntlets",
-        legs="Boii cuisses +2",
-        feet="Sulev. leggings +2",
-        neck="Warrior's beads",
-        waist="Sailfi Belt +1",
-        left_ear="Thrud Earring",
-        right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        left_ring="Regal Ring",
-        right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
-    }
-    
-    sets.ws["Savage Blade"] = {
-        ammo="Knobkierrie",
-        head="Agoge mask +3",
-        body="Pummeler's Lorica +3",
-        hands="Boii mufflers +2",
-        legs="Boii cuisses +2",
-        feet="Sulev. leggings +2",
-        neck={ name="Warrior's Beads", augments={'Path: A',}},
-        waist="Sailfi Belt +1",
-        left_ear="Thrud Earring",
-        right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        left_ring="Regal Ring",
-        right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
-    }
-
-
-    sets.ws["Sanguine Blade"] = {
-        ammo="Knobkierrie",
-        head="Nyame helm",
-        body="Nyame mail",
-        hands="Nyame gauntlets",
-        legs="Nyame flanchard",
-        feet="Nyame sollerets",
-        neck="Sibyl scarf",
-        waist="Sailfi Belt +1",
-        left_ear="Friomisi earring",
-        right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-    }
-
-    sets.ws["Impulse Drive"] = {
-        ammo="Yetshila +1",
-        head="Boii mask +2",
-        body="Hjarrandi Breast.",
-        hands="Boii mufflers +2",
-        legs="Boii cuisses +2",
-        feet="Boii calligae +2",
-        neck="Warrior's beads",
-        waist="Sailfi Belt +1",
-        left_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        right_ear="Boii earring +1",
-        left_ring="Regal ring",
-        right_ring="Niqmaddu ring",
-        back={ name="Cichol's Mantle", augments={'STR+20','Accuracy+20 Attack+20','STR+10','Weapon skill damage +10%','Damage taken-5%',}},
-    }
-
-
-    sets.ws.cp = {
-        ammo="Knobkierrie",
-        head="Boii mask +2",
-        body="Pummeler's Lorica +3",
-        hands="Boii mufflers +2",
-        legs="Boii cuisses +2",
-        feet="Pumm. Calligae +3",
-        neck="Republican Platinum Medal",
-        waist="Sailfi Belt +1",
-        left_ear="Thrud Earring",
-        right_ear={ name="Moonshade Earring", augments={'"Mag.Atk.Bns."+4','TP Bonus +250',}},
-        left_ring="Petrov Ring",
-        right_ring="Niqmaddu ring",
-        back="Mecisto. Mantle",
-    }
-
-
-
-    -- CP and TH sets
-    sets.CP = { back="Mecisto. Mantle" }
-    sets.TH = { ammo="Perfect Lucky Egg", body={ name="Valorous Mail", augments={'INT+7','STR+15','"Treasure Hunter"+1',}} }
-
-    -- Job Abilities Sets
-    sets.ja = {
-        ['Berserk'] = { body="Pummeler's Lorica +3", feet="Agoge Calligae", back="Cichol's Mantle" },
-        ['Aggressor'] = { body="Agoge Lorica +2", head="Pummeler's Mask +2" },
-        ['Retaliation'] = { feet="Boii Calligae +2", hands="Pummeler's Mufflers +1" },
-        ['Warcry'] = { head="Agoge mask +3" },
-        ['Tomahawk'] = { ammo="Throwing Tomahawk" },
-        ['Blood Rage'] = { body="Boii Lorica +2" },
-        ['Restraint'] = { hands="Boii Mufflers +1" },
-        ['Provoke'] = { body={ name="Souv. Cuirass +1", augments={'HP+105','Enmity+9','Potency of "Cure" effect received +15%',}}, hands="Pummeler's Mufflers +2", head="Pummeler's Mask +2", left_ring="Apeile ring", right_ring="Apeile ring +1" }
-    }
-
-    -- Idle Sets
-    sets.idle.normal = {
-        ammo="Staunch tathlum",
-        head="Sakpata's helm",
-        body="Sakpata's plate",
-        hands="Sakpata's gauntlets",
-        legs="Sakpata's cuisses",
-        feet="Sakpata's leggings",
-        neck="Republican Platinum Medal",
-        waist="Sailfi belt +1",
-        left_ear="Schere earring",
-        right_ear="Boii earring +1",
-        left_ring="Shneddick Ring",
-        right_ring="Warp Ring",
-        back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},
-    }
-
-    sets.idle.dt = set_combine(sets.idle.normal, {
-        back={ name="Cichol's Mantle", augments={'VIT+20','Accuracy+20 Attack+20','VIT+10','Weapon skill damage +10%','Damage taken-5%',}},
-    })
-
-    sets.idle.cp = set_combine(sets.idle.normal, {
-        back="Mecisto. Mantle",
-    })
-
-    -- Utsusemi Sets
-    sets.utsusemi = {
-        ring1 = "Prolix Ring",
-        body  = "Sacro breastplate",
-        head  = "Cizin Helm +1",
-        hands = "Leyline Gloves",
-        legs = "Founder's hose",
-        feet = "Odyssean greaves",
-        waist = "Audumbla sash",
-    }
+    -- Load and initialize the include file.
+    include('Sel-Include.lua')
 end
 
-function precast(spell)
-    -- Switch gear for Utsusemi spells.
-    if spell.english == "Utsusemi: Ichi" or spell.english == "Utsusemi: Ni" then
-        equip(sets.utsusemi)
-    elseif spell.type == 'WeaponSkill' then
-            if sets.ws[spell.english] then
-                equip(sets.ws[spell.english])
-            else
-                equip(sets.ws.normal)
+    -- Setup vars that are user-independent.
+function job_setup()
+
+	state.Buff['Brazen Rush'] = buffactive['Brazen Rush'] or false
+	state.Buff["Warrior's Charge"] = buffactive["Warrior's Charge"] or false
+	state.Buff['Mighty Strikes'] = buffactive['Mighty Strikes']  or false
+	state.Buff.Retaliation = buffactive['Retaliation'] or false
+	state.Buff.Restraint = buffactive['Restraint'] or false
+    state.Buff['Aftermath'] = buffactive['Aftermath'] or false
+	state.Buff['Aftermath: Lv.3'] = buffactive['Aftermath: Lv.3'] or false
+    state.Buff.Hasso = buffactive.Hasso or false
+    state.Buff.Seigan = buffactive.Seigan or false
+	state.Stance = M{['description']='Stance','Hasso','Seigan','None'}
+
+	autows = "Ukko's Fury"
+	autofood = 'Soy Ramen'
+	
+	init_job_states({"Capacity","AutoRuneMode","AutoTrustMode","AutoWSMode","AutoShadowMode","AutoFoodMode","AutoStunMode","AutoDefenseMode",},{"AutoBuffMode","AutoSambaMode","Weapons","OffenseMode","WeaponskillMode","Stance","IdleMode","Passive","RuneElement","TreasureMode",})
+end
+	
+-------------------------------------------------------------------------------------------------------------------
+-- Job-specific hooks for standard casting events.
+-------------------------------------------------------------------------------------------------------------------
+-- Set eventArgs.handled to true if we don't want any automatic gear equipping to be done.
+-- Set eventArgs.useMidcastGear to true if we want midcast gear equipped on precast.
+
+function job_filtered_action(spell, eventArgs)
+	if spell.type == 'WeaponSkill' then
+		local available_ws = S(windower.ffxi.get_abilities().weapon_skills)
+		-- WS 112 is Double Thrust, meaning a Spear is equipped.
+		if available_ws:contains(48) then
+            if spell.english == "Upheaval" then
+				windower.chat.input('/ws "Resolution" '..spell.target.raw)
+                cancel_spell()
+				eventArgs.cancel = true
+            elseif spell.english == "Ukko's Fury" then
+                send_command('@input /ws "Ground Strike" '..spell.target.raw)
+                cancel_spell()
+				eventArgs.cancel = true
             end
-        
-    elseif spell.english == "Apururu (UC)" then
-        equip({ body = "Apururu Unity Shirt" })
-    elseif spell.type == "JobAbility" then
-        local ja_sets = sets.ja[spell.english]
-        if ja_sets then
-            equip(set_combine(sets.melee.normal, ja_sets))
         end
-    end
+	end
 end
 
-function midcast(spell)
-    -- This function is intentionally left blank for now
+function job_precast(spell, spellMap, eventArgs)
+	if spell.type == 'WeaponSkill' and state.AutoBuffMode.value ~= 'Off' then
+		local abil_recasts = windower.ffxi.get_ability_recasts()
+		if player.tp < 2250 and not buffactive['Blood Rage'] and abil_recasts[2] < latency then
+			eventArgs.cancel = true
+			windower.chat.input('/ja "Warcry" <me>')
+			windower.chat.input:schedule(1,'/ws "'..spell.english..'" '..spell.target.raw..'')
+			tickdelay = os.clock() + 1.25
+			return
+		elseif player.sub_job == 'SAM' and player.tp > 1850 and abil_recasts[140] < latency then
+			eventArgs.cancel = true
+			windower.chat.input('/ja "Sekkanoki" <me>')
+			windower.chat.input:schedule(1,'/ws "'..spell.english..'" '..spell.target.raw..'')
+			tickdelay = os.clock() + 1.25
+			return
+		elseif player.sub_job == 'SAM' and abil_recasts[134] < latency then
+			eventArgs.cancel = true
+			windower.chat.input('/ja "Meditate" <me>')
+			windower.chat.input:schedule(1,'/ws "'..spell.english..'" '..spell.target.raw..'')
+			tickdelay = os.clock() + 1.25
+			return
+		end
+	end
 end
 
-function aftercast(spell)
-    idle()
+-- Modify the default melee set after it was constructed.
+function job_customize_melee_set(meleeSet)
+
+	if not state.OffenseMode.value:contains('Acc') and state.HybridMode.value == 'Normal' and buffactive['Retaliation'] then
+		meleeSet = set_combine(meleeSet, sets.buff.Retaliation)
+	end
+	
+	if not state.OffenseMode.value:contains('Acc') and state.HybridMode.value == 'Normal' and buffactive['Restraint'] then
+		meleeSet = set_combine(meleeSet, sets.buff.Restraint)
+	end
+	
+    return meleeSet
 end
 
-function post_midcast(spell)
-    -- This function is intentionally left blank for now
+-- Run after the general precast() is done.
+function job_post_precast(spell, spellMap, eventArgs)
+	if spell.type == 'WeaponSkill' then
+
+		local WSset = standardize_set(get_precast_set(spell, spellMap))
+		local wsacc = check_ws_acc()
+		
+		if (WSset.ear1 == "Moonshade Earring" or WSset.ear2 == "Moonshade Earring") then
+			-- Replace Moonshade Earring if we're at cap TP
+			if get_effective_player_tp(spell, WSset) > 3200 then
+				if wsacc:contains('Acc') and not buffactive['Sneak Attack'] and sets.AccMaxTP then
+					local AccMaxTPset = standardize_set(sets.AccMaxTP)
+
+					if (AccMaxTPset.ear1:startswith("Lugra Earring") or AccMaxTPset.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn and sets.AccDayMaxTPWSEars then
+						equip(sets.AccDayMaxTPWSEars[spell.english] or sets.AccDayMaxTPWSEars)
+					else
+						equip(sets.AccMaxTP[spell.english] or sets.AccMaxTP)
+					end
+				elseif sets.MaxTP then
+					local MaxTPset = standardize_set(sets.MaxTP)
+					if (MaxTPset.ear1:startswith("Lugra Earring") or MaxTPset.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn and sets.DayMaxTPWSEars then
+						equip(sets.DayMaxTPWSEars[spell.english] or sets.DayMaxTPWSEars)
+					else
+						equip(sets.MaxTP[spell.english] or sets.MaxTP)
+					end
+				else
+				end
+			else
+				if wsacc:contains('Acc') and not buffactive['Sneak Attack'] and (WSset.ear1:startswith("Lugra Earring") or WSset.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn and sets.AccDayWSEars then
+					equip(sets.AccDayWSEars[spell.english] or sets.AccDayWSEars)
+				elseif (WSset.ear1:startswith("Lugra Earring") or WSset.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn and sets.DayWSEars then
+					equip(sets.DayWSEars[spell.english] or sets.DayWSEars)
+				end
+			end
+		elseif (WSset.ear1:startswith("Lugra Earring") or WSset.ear2:startswith("Lugra Earring")) and not classes.DuskToDawn then
+			if wsacc:contains('Acc') and not buffactive['Sneak Attack'] and sets.AccDayWSEars then
+				equip(sets.AccDayWSEars[spell.english] or sets.AccDayWSEars)
+			elseif sets.DayWSEars then
+				equip(sets.DayWSEars[spell.english] or sets.DayWSEars)
+			end
+		end
+		
+		if wsacc:contains('Acc') and not buffactive['Sneak Attack'] then
+			if state.Buff.Charge and state.Buff['Mighty Strikes'] and sets.ACCWSMightyCharge then
+				equip(sets.ACCWSMightyCharge)
+			elseif state.Buff.Charge and sets.ACCWSCharge then
+				equip(sets.ACCWSCharge)
+			elseif state.Buff['Mighty Strikes'] and sets.ACCWSMighty then
+				equip(sets.AccWSMighty)
+			end
+		else
+			if state.Buff.Charge and state.Buff['Mighty Strikes'] and sets.WSMightyCharge then
+				equip(sets.WSMightyCharge)
+			elseif state.Buff.Charge and sets.WSCharge then
+				equip(sets.WSCharge)
+			elseif state.Buff['Mighty Strikes'] and sets.WSMighty then
+				equip(sets.WSMighty)
+			end
+		end
+
+	end
+
 end
 
-function idle()
-    local idleSet
-
-    -- Check if player is affected by Stun or Terror
-    if buffactive["Terror"] or buffactive["Stun"] then
-        idleSet = sets.idle.dt  -- Automatically equip DT set when affected
-    elseif player.status == 'Engaged' then
-        if buffactive['Aftermath: Lv.3'] then
-            idleSet = sets.melee.am3  -- Equip the Aftermath Level 3 Set
-        elseif useDTsets then
-            idleSet = sets.melee.dt
-        elseif CPmode then
-            idleSet = sets.melee.cp
-        elseif THmode then
-            idleSet = sets.melee.th
-        else
-            idleSet = sets.melee.normal
-        end
-    else
-        -- Player is idle, apply regen gear logic
-        if useDTsets then
-            idleSet = sets.idle.dt
-        elseif CPmode then
-            idleSet = sets.idle.cp
-        else
-            idleSet = sets.idle.normal
-        end
-
-        -- Always equip Sacro Breastplate when idle
-        idleSet = set_combine(idleSet, { body = "Sacro Breastplate" })
-
-        -- Check HP % and equip appropriate rings
-        local hpPercent = (player.hp / player.max_hp) * 100
-
-        if hpPercent <= 60 then
-            idleSet = set_combine(idleSet, { left_ring = "Apeile Ring", right_ring = "Apeile Ring +1", neck = "Sanctity necklace" })
-        elseif hpPercent <= 70 then
-            idleSet = set_combine(idleSet, { left_ring = "Shneddick ring", right_ring = "Apeile Ring +1", neck = "Sanctity necklace" })
-        else
-            idleSet = set_combine(idleSet, { left_ring = "Shneddick Ring", right_ring = "Warp ring", neck = "Republican platinum medal" })  -- Adjust default ring if needed
-        end
-    end
-
-    equip(idleSet)
+function job_tick()
+	if check_hasso() then return true end
+	if check_buff() then return true end
+	return false
 end
 
-function status_change(new, old)
-    idle()
+-- Called by the 'update' self-command.
+function job_update(cmdParams, eventArgs)
+    update_melee_groups()
+	
+	if player.sub_job ~= 'SAM' and state.Stance.value ~= "None" then
+		state.Stance:set("None")
+	end
 end
+
+function job_aftercast(spell, spellMap, eventArgs)
+	if not spell.interrupted then
+		if spell.english == 'Warcry' then
+			lastwarcry = player.name
+		end
+	end
+end
+
+function job_buff_change(buff, gain)
+	if buff == 'Warcry' then
+		if gain and windower.ffxi.get_ability_recasts()[2] > 297 then
+			lastwarcry = player.name
+		else
+			lastwarcry = ''
+		end
+	end
+	update_melee_groups()
+end
+
+function update_melee_groups()
+    if player then
+		classes.CustomMeleeGroups:clear()
+		
+		if data.areas.adoulin:contains(world.area) and buffactive.Ionis then
+			classes.CustomMeleeGroups:append('Adoulin')
+		end
+		
+		if state.Buff['Brazen Rush'] or state.Buff["Warrior's Charge"] then
+			classes.CustomMeleeGroups:append('Charge')
+		end
+		
+		if state.Buff['Mighty Strikes'] then
+			classes.CustomMeleeGroups:append('Mighty')
+		end
+		
+		if (player.equipment.main == "Ukonvasara" and buffactive['Aftermath: Lv.3']) or ((player.equipment.main == "Bravura" or player.equipment.main == "Ragnarok") and state.Buff['Aftermath']) then
+				classes.CustomMeleeGroups:append('AM')
+		end
+	end
+end
+
+function check_hasso()
+	if not (state.Stance.value == 'None' or state.Buff.Hasso or state.Buff.Seigan) and player.sub_job == 'SAM' and player.in_combat then
+		
+		local abil_recasts = windower.ffxi.get_ability_recasts()
+		
+		if state.Stance.value == 'Hasso' and abil_recasts[138] < latency then
+			windower.chat.input('/ja "Hasso" <me>')
+			tickdelay = os.clock() + 1.1
+			return true
+		elseif state.Stance.value == 'Seigan' and abil_recasts[139] < latency then
+			windower.chat.input('/ja "Seigan" <me>')
+			tickdelay = os.clock() + 1.1
+			return true
+		else
+			return false
+		end
+	end
+
+	return false
+end
+
+function check_buff()
+	if state.AutoBuffMode.value ~= 'Off' and player.in_combat then
+		
+		local abil_recasts = windower.ffxi.get_ability_recasts()
+
+		if not buffactive.Retaliation and abil_recasts[8] < latency then
+			windower.chat.input('/ja "Retaliation" <me>')
+			tickdelay = os.clock() + 1.1
+			return true		
+		elseif not buffactive.Restraint and abil_recasts[9] < latency then
+			windower.chat.input('/ja "Restraint" <me>')
+			tickdelay = os.clock() + 1.1
+			return true
+		elseif not buffactive['Blood Rage'] and abil_recasts[11] < latency then
+			windower.chat.input('/ja "Blood Rage" <me>')
+			tickdelay = os.clock() + 1.1
+			return true
+		elseif not buffactive.Berserk and abil_recasts[1] < latency then
+			windower.chat.input('/ja "Berserk" <me>')
+			tickdelay = os.clock() + 1.1
+			return true
+		elseif not buffactive.Aggressor and abil_recasts[4] < latency then
+			windower.chat.input('/ja "Aggressor" <me>')
+			tickdelay = os.clock() + 1.1
+			return true
+		else
+			return false
+		end
+	end
+		
+	return false
+end
+
 
 function pretarget(spell, action)
     -- Auto Use Echo Drops If You Are Silenced --
@@ -438,29 +278,38 @@ function pretarget(spell, action)
     elseif spell.english == "Berserk" and buffactive.Berserk then
         cancel_spell()
         send_command('input /ja "Aggressor" <me>')
-    -- Change Seigan To Third Eye If Seigan Is On --
-    elseif spell.english == "Seigan" and buffactive.Seigan then
-        cancel_spell()
-        send_command('input /ja "Third Eye" <me>')
-    -- Change Seigan To Third Eye If Seigan Is On --
-    elseif spell.english == "Warcry" and buffactive.BloodRage then
-        cancel_spell()
-        send_command('/echo Blood Rage is up, canceling to avoid override.')
-    elseif spell.english == "Blood Rage" and buffactive.Warcry then
-        cancel_spell()
-        send_command('/echo Warcry is up, canceling to avoid override.')
     end
 end
 
-function self_command(command)
-    if command == 'toggleTH' then
-        THmode = not THmode
-        send_command('@input /echo TH Mode ' .. (THmode and 'ON. I prefer the term "Treasure Hunter!"' or 'OFF. Enjoy the extra inventory.'))
-    elseif command == 'toggleCP' then
-        CPmode = not CPmode
-        send_command('@input /echo CP Mode ' .. (CPmode and 'ON. Training arc activated.' or 'OFF. Hit the showers, champ.'))
-    elseif command == 'toggleDT' then
-        useDTsets = not useDTsets
-        send_command('@input /echo DT Mode ' .. (useDTsets and 'ON. The extra durability fills you with determination.' or 'OFF. Warning: Squishy.'))
+function idle()
+    local idleSet
+
+    -- Check if player is affected by Stun or Terror
+    if buffactive["Terror"] or buffactive["Stun"] then
+        idleSet = sets.idle.dt  -- Automatically equip DT set when affected
+    elseif player.status == 'Engaged' then
+        if buffactive['Aftermath: Lv.3'] then
+            idleSet = sets.engaged.am3  -- Equip the Aftermath Level 3 Set
+        else
+            idleSet = sets.engaged.normal  -- Fallback engaged set if AM3 not active
+        end
+    else
+        idleSet = sets.idle.normal  -- Default idle set when not engaged or under status
     end
-end 
+
+    -- Always equip Sacro Breastplate when idle
+    idleSet = set_combine(idleSet, { body = "Sacro Breastplate" })
+
+    -- Check HP % and equip appropriate rings
+    local hpPercent = (player.hp / player.max_hp) * 100
+
+    if hpPercent <= 60 then
+        idleSet = set_combine(idleSet, { left_ring = "Apeile Ring", right_ring = "Apeile Ring +1", neck = "Sanctity Necklace" })
+    elseif hpPercent <= 70 then
+        idleSet = set_combine(idleSet, { left_ring = "Shneddick Ring", right_ring = "Apeile Ring +1", neck = "Sanctity Necklace" })
+    else
+        idleSet = set_combine(idleSet, { left_ring = "Shneddick Ring", right_ring = "Warp Ring", neck = "Republican Platinum Medal" })
+    end
+
+    equip(idleSet)
+end
